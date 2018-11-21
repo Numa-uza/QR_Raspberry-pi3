@@ -63,3 +63,6 @@ def draw_positions(frame, decoded_objs):
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=False, threaded=True)
+    
+font = cv2.FONT_HERSHEY_SIMPLEX
+cv2.putText(img,'OpenCV',(10,500), font, 4,(255,255,255),2,cv2.LINE_AA)
